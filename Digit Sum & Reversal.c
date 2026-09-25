@@ -3,11 +3,15 @@
 print the number reversed. Handle negative numbers correctly. */
 
 #include <stdio.h>
+
 int main(){
+    
     int num, sum=0, reversed=0, originalNum;
+    
     printf("Enter an integer: ");
     scanf("%d",&num);
     originalNum = num;
+    
     if(num<0){
         num=-num;
     }
@@ -19,9 +23,11 @@ int main(){
     }
 
     printf("Sum of digits of %d is: %d\n", originalNum, sum);
+   
     if(originalNum<0){
         reversed=-reversed;
     }
+    
     printf("Reversed number is: %d\n", reversed);
 
     return 0;
