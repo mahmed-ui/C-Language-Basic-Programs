@@ -19,6 +19,7 @@
 
 void printtables(int n);
 void printfactorial(int a);
+void printevenodd(int b);
 
 int main(){
     int num;
@@ -26,6 +27,7 @@ int main(){
     scanf("%d", &num);
     printtables(num);
     printfactorial(num);
+    printevenodd(num);
 
     return 0;
 
@@ -34,7 +36,7 @@ int main(){
 void printtables(int n){
     printf("\nTable of entered number: ");
     for(int i=1;i<=10;i++){
-        printf("%d*%d=%d \n",n,i,n*i);
+        printf("\n %d*%d=%d",n,i,n*i);
     } 
 }
 
@@ -47,3 +49,10 @@ void printfactorial(int a){
     printf("\nFactorial of entered number is %d",fact);
 }
 
+void printevenodd(int b){
+    if(b%2==0){
+        printf("\nEven number");
+    }else{
+        printf("\nOdd Number");
+    }
+}
